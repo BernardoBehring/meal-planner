@@ -43,6 +43,14 @@ Summary of total consumption per ingredient (from the meal-by-meal count), with 
 | --- | --- | --- | --- |
 | Bananas | 14 (≈1.7 kg) | 2 | 12 |
 
+## ✅ Daily references
+
+Filled from the Menu **before** prices (see the weekly-plan skill, Phase 4). Each cell: fruit portions / dairy portions / meals with vegetables that the Member gets that day. Reference: fruit 2–3, dairy every day for Children, vegetables at lunch and dinner. Mark any cell below the reference with ❌ — a Week with ❌ is not ready to be priced.
+
+| Member | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| <Name> | 2 / 2 / 2 | ... | | | | | |
+
 ## 👥 Presence
 
 Who eats at home at each meal, only when different from the routine (e.g. "Thu dinner: Ana at grandma's"; "Sat lunch: +2 adult Guests"). If there are Guests, mark the Week **with Guests** in the Goal and show the estimated cost attributed to them (e.g. "Guests: ≈6.40 of the List").

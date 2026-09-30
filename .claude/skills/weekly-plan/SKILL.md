@@ -68,7 +68,11 @@ Build the Menu for the 7 days of the planned Week following the agent's nutritio
    - **Bread, oats and breakfast cereals**, and **vegetables** at lunch and dinner.
 3. **Shopping list** = total consumption − Projected stock, rounded up to real pack sizes, with a small margin for staples that are 🟡 or 🔴.
 4. Do not buy what is already at home in sufficient quantity (Rule 7).
-5. **Sufficiency check**: before moving on, confirm every meal on the Menu has its ingredients covered (Projected stock + List). If the Estimated cost is far below the Week budget (for example, under 60%), treat it as a warning, not a win: redo the count of the daily items above. A low cost is only legitimate when it comes from Stock being used, and the Week file must show where each meal comes from.
+5. **Sufficiency check** — do it before looking at prices, and do not redo it afterwards to make the cost fit:
+   - **Every ingredient named on the Menu** (including salad items, bread for toast and sandwiches, sauces and sides) appears in the Week quantities table and is covered by Projected stock + List. An ingredient on the Menu but missing from the table is an error, not a saving.
+   - **Count slices and pieces, not packs**: e.g. bread = slices per toast/sandwich × people × occasions; an 800 g loaf has about 20 slices.
+   - **Daily references** are met for every Member present: fruit 2 to 3 portions per day, dairy (or alternative) every day for Children, vegetables at lunch and dinner. Prove it with the **Daily references table** in the Week file: one row per Member, one column per day, each cell with the number of fruit portions / dairy portions / meals with vegetables that the Menu actually gives that Member that day (counting only meals they are present for, including lunchboxes and canteen meals only if their content is known). Fill it **before** price research, from the Menu, not from the budget. Any cell below the reference means the Menu must be fixed (add fruit to breakfast or snacks, milk to porridge, a vegetable side) — and the quantities in step 2 recounted — before moving on. A sentence such as "the daily reference is met" is not a substitute for the table.
+   - If the Estimated cost is far below the Week budget (for example, under 60%), treat it as a warning, not a win: redo the count. A low cost is only legitimate when it comes from Stock being used, and the Week file must show where each meal comes from.
 
 ### Phase 5: Prices
 
@@ -81,6 +85,8 @@ Use the `price-research` skill with the Shopping list and the **Search level** f
    - **Shopping days left in the month** = number of occurrences of the Shopping day from the purchase date to the end of that month, including the purchase date. Always at least 1.
 2. Compare with the Estimated cost and classify: 🟢 within, 🟡 near the limit (margin below ~5%) or 🔴 over.
 3. 🟡: look for easy savings. 🔴: apply **Economy mode** in the order of the agent's rules and, if it still does not fit, present the **Scenarios** (only as differences from the main Menu). Never cut necessary food or Children's essential foods.
+   - **The cost is always the cost of the adequate Menu** from Phase 4. Never shrink quantities, drop ingredients or fall below the daily references to reach 🟢: that turns a budget problem into a hidden food problem. If the adequate Menu does not fit even after Economy mode, the Week is 🔴: say so plainly, show the gap, and let the Scenarios show what the Family could change (cheaper proteins, fewer premium items), each still meeting the daily references. The Lead decides; the Plan never decides silently.
+   - A note like "fruit is tighter than usual this Week" means the check failed: go back to Phase 4 instead of writing it.
 4. Record each saving applied (item → alternative: −amount).
 
 ### Phase 7: Save
