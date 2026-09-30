@@ -1,0 +1,3 @@
+Automatic Review request run. Use the review-request skill in automatic mode to send the Review request for the Week that is ending. Do not make the Plan.
+
+The FAMILY STATE (data/state.md) is pasted above. Nobody is available to answer questions.

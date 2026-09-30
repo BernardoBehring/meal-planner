@@ -1,0 +1,12 @@
+# Each family's private data: never commit
+data/
+inbox/
+archive/
+scheduling/logs/
+
+# Personal Claude Code settings
+.claude/settings.local.json
+
+# OS noise
+.DS_Store
+Thumbs.db

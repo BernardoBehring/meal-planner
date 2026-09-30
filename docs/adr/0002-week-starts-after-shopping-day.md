@@ -1,0 +1,3 @@
+# The Week starts the day after the Shopping day
+
+The Week is not fixed to Monday–Sunday: it is the 7 days following the Shopping day the Family chose in onboarding, and the Week file is named after its first day. That way each purchase serves exactly the Week that follows it, whatever day the Family shops. We rejected keeping Monday–Sunday and restricting shopping to Friday–Sunday, because it excluded families who shop midweek. We also rejected keeping Monday–Sunday with shopping on any day, because a Wednesday purchase would cover half of two Weeks and muddle the Projected stock and the Budget.

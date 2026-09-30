@@ -1,0 +1,3 @@
+# The Receipt is the source of truth for Spend, Stock and prices paid
+
+The system only considers a purchase confirmed when it receives the Receipt (photo or invoice), dropped by the Lead in the inbox folder. Until then the purchase is Unconfirmed: the system assumes it was made and uses the Estimated cost, so the Plan is never blocked and nothing is bought twice. The Receipt gives the real Spend, the Stock additions and the prices actually paid per product and store, which are recorded as verified prices in the history. We rejected assuming the Shopping list was bought as planned, because Stock and Spend would drift from reality unnoticed. We also rejected having the Lead report only the total spent, because the price of each product would be lost.

@@ -1,0 +1,3 @@
+Automatic Plan run. Use the weekly-plan skill in automatic mode to plan the next Week (the 7 days after the next Shopping day).
+
+The FAMILY STATE (data/state.md) is pasted above. Nobody is available to answer questions: decide from the state and record doubts under PENDING.
