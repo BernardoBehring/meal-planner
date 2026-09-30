@@ -19,7 +19,7 @@ It adapts to each family member (adults can have goals such as losing weight; ch
 ## Install
 
 ```bash
-git clone <this repository's URL> meal-planner
+git clone https://github.com/BernardoBehring/meal-planner.git
 cd meal-planner
 claude --agent meal-planner
 ```
