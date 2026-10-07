@@ -86,7 +86,7 @@ Claude Code usage is billed to each person's own Claude account. Price research 
 ## How it is built (for the curious)
 
 - `.claude/agents/meal-planner.md` — the agent: rules, principles, when to use each skill.
-- `.claude/skills/` — one skill per routine: `onboarding`, `intake`, `weekly-plan`, `price-research`, `review-request`, `change-plan`, `month-close`.
+- `.claude/skills/` — atomic skills, one per business rule or effect (e.g. `budget-compute-week`, `receipt-read`, `email-send-list`), hidden from the `/` menu; and seven orchestrators you can call by name, one per routine: `onboarding`, `intake`, `weekly-plan`, `price-research`, `review-request`, `change-plan`, `month-close`. Why: `docs/adr/0004-atomic-skills.md`.
 - `CONTEXT.md` — the glossary (Family, Member, Lead, Week, Stock, Spend, Receipt...). Terms are used with exactly these meanings everywhere.
 - `docs/adr/` — design decisions and why.
 - `templates/state.md` — the empty family state copied on first run.

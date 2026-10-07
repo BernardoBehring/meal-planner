@@ -1,6 +1,6 @@
 # Week file template
 
-Use exactly this structure in `data/weeks/<first day of the Week>.md` (the day after the Shopping day). Write the **titles and text in the conversation language** from ROUTINES (the English below is the reference), with amounts in the Family's currency, except the `🧾 Receipts` and `📝 Review` headings, which stay in English because other skills look for them. Sections with no content show "—" instead of disappearing, so all Weeks are comparable. The `🧾 Receipts` and `📝 Review` sections are appended later by the `intake` skill: keep them if they already exist.
+Structure of `data/weeks/<first day of the Week>.md`. Language, headings and the sections to keep are ruled by the `week-write-file` skill. The `🧾 Receipts`, `📝 Review` and `✏️ Changes` sections are appended later by the `week-append-section` skill.
 
 ````markdown
 # 🗓️ Week of YYYY-MM-DD to YYYY-MM-DD
@@ -45,7 +45,7 @@ Summary of total consumption per ingredient (from the meal-by-meal count), with 
 
 ## ✅ Daily references
 
-Filled from the Menu **before** prices (see the weekly-plan skill, Phase 4). Each cell: fruit portions / dairy portions / meals with vegetables that the Member gets that day. Reference: fruit 2–3, dairy every day for Children, vegetables at lunch and dinner. Mark any cell below the reference with ❌ — a Week with ❌ is not ready to be priced.
+Filled from the Menu **before** prices by the `list-check-sufficiency` skill. Each cell: fruit portions / dairy portions / meals with vegetables that the Member gets that day. Mark any cell below the reference with ❌ — a Week with ❌ is not ready to be priced.
 
 | Member | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- |

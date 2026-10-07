@@ -7,7 +7,7 @@ Onboarding: PENDING
 
 ## E-MAIL
 
-(Changed only at the Lead's request, in conversation, with a notice to the old address. Types: "all" = full Plan, Review request and updated lists; "list only" = short e-mail with Shopping list and Menu, and updated lists.)
+(Set by the `email-set-recipients` skill; types explained in `email-resolve-recipients`. One line per recipient: "- <address> (<Lead | name> — <all | list only>)".)
 
 - — (Lead — all)
 
@@ -30,7 +30,7 @@ Onboarding: PENDING
 
 ### Members
 
-(One block per Member, filled in onboarding. Age is calculated from the birth month at each Plan: Adult = 18 or over; Child = under 18.)
+(One block per Member, filled in onboarding. Adult or Child is decided by age at each Plan — see the `presence-compute` skill.)
 
 - —
 
@@ -89,9 +89,9 @@ Current month (YYYY-MM) — Spend by Receipt date:
 
 ## STOCK
 
-Last Stock count: — (next: first Shopping day of the period, per ROUTINES)
+Last Stock count: — (when the next one is due: `stock-check-count-due` skill)
 
-(item — quantity — 🟢 available / 🟡 running low / 🔴 critical / ⚠️ use first — expiry — Unconfirmed?)
+(Line format and statuses: see the `stock-classify` skill.)
 
 - —
 
