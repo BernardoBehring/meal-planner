@@ -35,6 +35,8 @@ $prompt | & $claude -p --agent meal-planner `
     --allowedTools Read Write Edit Glob Grep Skill WebSearch WebFetch `
         mcp__claude_ai_Gmail__send_message mcp__claude_ai_Gmail__search_threads mcp__claude_ai_Gmail__get_thread `
         mcp__claude_ai_Gmail__list_labels mcp__claude_ai_Gmail__create_label mcp__claude_ai_Gmail__label_message `
+        mcp__claude_ai_Google_Drive__search_files mcp__claude_ai_Google_Drive__read_file_content `
+        mcp__claude_ai_Google_Drive__search_files mcp__claude_ai_Google_Drive__read_file_content `
         'Bash(mkdir -p archive/:*)' 'Bash(mv inbox/:*)' `
     2>&1 | Out-File -FilePath $log -Encoding utf8
 

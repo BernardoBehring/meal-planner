@@ -21,6 +21,7 @@ Write the month file and summary in the **conversation language** from ROUTINES 
    - **Spend** from every Receipt dated in the month, from the files in `data/weeks/` (`🧾 Receipts` sections) and from BUDGET in the state. Spend belongs to the month of the **Receipt date**.
    - **Unconfirmed** purchases of the month (no Receipt): use the Estimated cost, marked ESTIMATE.
    - Estimated cost of each Plan of the month, Top-up purchases, cost attributed to Guests, Meals out, Waste.
+   - For each Adult with a "Weight log" line: the 7-day average at the start and end of the month and the change (agent's "Weight log" rules); put it under "Lessons for next month".
 3. Calculate and write `data/months/YYYY-MM.md`:
 
 ````markdown

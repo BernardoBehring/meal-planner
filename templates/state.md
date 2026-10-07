@@ -42,6 +42,7 @@ Block template — Adult:
   - Work / hours / weekday lunch (home, lunchbox, work canteen): —
   - Allergies / intolerances / restrictions: —
   - Health / relevant medication: —
+  - Weight log (Google Drive file title, optional): —
   - Usual presence: every day
 
 Block template — Child:

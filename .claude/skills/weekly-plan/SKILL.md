@@ -43,6 +43,7 @@ If the **purchase date** is in a different month from the "Current month" in BUD
 
 - Use the Review already processed (LAST WEEK → "Review received").
 - No Review: in interactive mode, ask the questions (what was left over, ran out, went off, liked, disliked, what each Child ate well or refused, how much was spent, did the routine change?); in automatic mode, carry on and mark "Review pending".
+- **Weight log**: for each Adult with a "Weight log" line, read it as the agent's "Weight log" rules say and record in the Week file's Review the 7-day average, its change from the previous 7 days and from the start of the log. If that Adult's goal is weight loss and the 7-day average has not dropped for 3 Weeks in a row, adjust their portions a little (less carbohydrate, same protein, fruit and vegetables) and say so; a faster loss than about 1% of body weight per week is worth mentioning too. Never for Children.
 - Current Week purchases without a Receipt stay **Unconfirmed**: the Estimated cost stands in for the Spend, labelled as an estimate, and the Receipt goes under PENDING.
 
 ### Phase 3: Menu

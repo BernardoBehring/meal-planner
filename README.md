@@ -15,6 +15,7 @@ It adapts to each family member (adults can have goals such as losing weight; ch
 - **Claude Code** installed and logged in with a Claude account ([install guide](https://docs.claude.com/en/docs/claude-code/setup)). Each person uses their own account and pays for their own usage (a weekly Plan with price comparison costs roughly US$1–3 of usage; see "Costs" below).
 - **Git**, to download and update the project.
 - **Optional — e-mail:** connect **Gmail** to your claude.ai account (claude.ai → Settings → Connectors → Gmail). Without it everything still works; plans stay in files and in the chat instead of arriving by e-mail.
+- **Optional — weight log:** if an Adult already logs their weight daily in a Google Drive file (e.g. a spreadsheet with date and weight), connect **Google Drive** the same way and give the file's title in onboarding. The agent reads only that file, by its exact title, and never writes to Drive.
 
 ## Install
 
