@@ -45,6 +45,11 @@ Notes:
 
 - **The computer must be on** (and, on macOS/Windows, your user logged in) at the scheduled times. Windows and macOS run a missed job when the computer wakes up; Linux `cron` does not, so pick times when the machine is usually on (or use `anacron`).
 - **macOS:** the first run may ask for permission (e.g. to access files or the keychain where Claude Code keeps your login). If a job fails, check the log in `scheduling/logs/` and run `bash scheduling/run-agent.sh plan` once in Terminal to grant access.
+- **Logs:** every run is logged in `scheduling/logs/` (private, ignored by Git):
+  - `runs.log` — one `start` and one `end` line per run, with `OK` or `FAILED (exit N)` and the duration. A `start` with no `end` means the run was killed (e.g. the 1-hour limit on Windows) or the computer shut down.
+  - `YYYY-MM-DD_HHMM_plan.log` / `..._review.log` — what the agent answered, plus any error.
+  - Each run has a session id. `claude --resume <id>` from the project folder reopens that run, so you can see every step it took (searches, files, e-mails).
+  - A failed run also fails the job itself, so it shows up in Task Scheduler's "Last Run Result" (Windows), `launchctl print` (macOS) or the cron mail (Linux).
 - **Linux:** `cron` must be installed and running (`systemctl status cron` or `crond`).
 - **Windows:** Claude Code needs Git for Windows (Git Bash), which the Claude Code installer asks for anyway.
 - To remove the jobs: Windows — delete the two tasks in Task Scheduler; macOS — `launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.mealplanner.*.plist` and delete the files; Linux — `crontab -e` and delete the `# meal-planner` lines.
