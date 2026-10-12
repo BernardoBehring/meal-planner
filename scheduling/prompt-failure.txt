@@ -1,0 +1,10 @@
+Scheduled-run failure notice. Do NOT run any skill, do NOT plan, do NOT change any file.
+
+Read data/state.md only to find, in its E-MAIL section, the Lead's address and, in ROUTINES, the conversation language. Send ONE short e-mail to the Lead only, in that language, with the subject "[Meal planner] Scheduled run failed", saying:
+- which run failed (plan or review) and when, and after how many attempts (details below);
+- the last error lines below, explained in one plain sentence (e.g. the Claude usage limit was reached);
+- what to do now: run it by hand when possible (from the project folder: "claude --agent meal-planner", then ask for the Plan / the Review request), and where the log is.
+
+If data/state.md or the Lead's address is missing, do nothing.
+
+FAILED RUN DETAILS:

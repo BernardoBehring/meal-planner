@@ -33,7 +33,8 @@ $jobs = @(
        Description = 'Runs the meal-planner agent (Claude Code) to e-mail the Review request.' }
 )
 
-$settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 1) `
+# 9 h: run-agent.ps1 may retry up to 6 times, 1 h apart, after a Claude usage limit.
+$settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 9) `
     -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
 
 foreach ($j in $jobs) {

@@ -46,10 +46,13 @@ Notes:
 - **The computer must be on** (and, on macOS/Windows, your user logged in) at the scheduled times. Windows and macOS run a missed job when the computer wakes up; Linux `cron` does not, so pick times when the machine is usually on (or use `anacron`).
 - **macOS:** the first run may ask for permission (e.g. to access files or the keychain where Claude Code keeps your login). If a job fails, check the log in `scheduling/logs/` and run `bash scheduling/run-agent.sh plan` once in Terminal to grant access.
 - **Logs:** every run is logged in `scheduling/logs/` (private, ignored by Git):
-  - `runs.log` — one `start` and one `end` line per run, with `OK` or `FAILED (exit N)` and the duration. A `start` with no `end` means the run was killed (e.g. the 1-hour limit on Windows) or the computer shut down.
-  - `YYYY-MM-DD_HHMM_plan.log` / `..._review.log` — what the agent answered, plus any error.
-  - Each run has a session id. `claude --resume <id>` from the project folder reopens that run, so you can see every step it took (searches, files, e-mails).
+  - `runs.log` — `start`, `retry` and `end` lines per run, with `OK` or `FAILED (exit N)`, the duration and the number of attempts. A `start` with no `end` means the run was killed (e.g. the 9-hour limit on Windows) or the computer shut down.
+  - `YYYY-MM-DD_HHMM_plan.log` / `..._review.log` — what the agent answered in each attempt, plus any error.
+  - Each attempt has a session id. `claude --resume <id>` from the project folder reopens it, so you can see every step it took (searches, files, e-mails).
   - A failed run also fails the job itself, so it shows up in Task Scheduler's "Last Run Result" (Windows), `launchctl print` (macOS) or the cron mail (Linux).
+- **Retries:** if a run fails because your Claude usage limit was reached (or Claude is overloaded, or the network dropped), it waits 1 hour and tries again, up to 6 attempts. Other errors are not retried, so a half-done run never e-mails twice. On macOS/Linux, set `MAX_ATTEMPTS` / `RETRY_MINUTES` in the job's environment to change this.
+- **When a run finally fails:** a desktop notification (Windows, macOS; Linux when `notify-send` can reach your desktop) and an e-mail to the Lead. The e-mail is sent through Claude too, so after a usage limit it usually cannot go out — the notification and the logs still tell you.
+- **After updating this folder** (e.g. `git pull`), run the scheduling command above once more so the jobs pick up new settings.
 - **Linux:** `cron` must be installed and running (`systemctl status cron` or `crond`).
 - **Windows:** Claude Code needs Git for Windows (Git Bash), which the Claude Code installer asks for anyway.
 - To remove the jobs: Windows — delete the two tasks in Task Scheduler; macOS — `launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/com.mealplanner.*.plist` and delete the files; Linux — `crontab -e` and delete the `# meal-planner` lines.
