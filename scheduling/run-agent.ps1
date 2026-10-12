@@ -67,7 +67,7 @@ function Show-Notification([string]$title, [string]$text) {
 $agentTools = @('Read', 'Write', 'Edit', 'Glob', 'Grep', 'Skill', 'WebSearch', 'WebFetch',
     'mcp__claude_ai_Gmail__send_message', 'mcp__claude_ai_Gmail__search_threads', 'mcp__claude_ai_Gmail__get_thread',
     'mcp__claude_ai_Gmail__list_labels', 'mcp__claude_ai_Gmail__create_label', 'mcp__claude_ai_Gmail__label_message',
-    'mcp__claude_ai_Google_Drive__search_files', 'mcp__claude_ai_Google_Drive__read_file_content',
+    'mcp__claude_ai_Google_Drive__search_files', 'mcp__claude_ai_Google_Drive__read_file_content', 'Artifact', 'ArtifactData',
     'Bash(mkdir -p archive/:*)', 'Bash(mv inbox/:*)')
 
 Write-Log ("Run: {0}  started {1:yyyy-MM-dd HH:mm:ss}  (up to {2} attempts, {3} min apart)" -f $Kind, $started, $MaxAttempts, $RetryMinutes)

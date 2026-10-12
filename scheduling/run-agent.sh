@@ -77,7 +77,7 @@ notify_desktop() { # $1 title, $2 text
 agent_tools=(Read Write Edit Glob Grep Skill WebSearch WebFetch
   mcp__claude_ai_Gmail__send_message mcp__claude_ai_Gmail__search_threads mcp__claude_ai_Gmail__get_thread
   mcp__claude_ai_Gmail__list_labels mcp__claude_ai_Gmail__create_label mcp__claude_ai_Gmail__label_message
-  mcp__claude_ai_Google_Drive__search_files mcp__claude_ai_Google_Drive__read_file_content
+  mcp__claude_ai_Google_Drive__search_files mcp__claude_ai_Google_Drive__read_file_content Artifact ArtifactData
   'Bash(mkdir -p archive/:*)' 'Bash(mv inbox/:*)')
 
 echo "Run: $kind  started $(date '+%Y-%m-%d %H:%M:%S')  (up to $max_attempts attempts, $retry_minutes min apart)" > "$log"

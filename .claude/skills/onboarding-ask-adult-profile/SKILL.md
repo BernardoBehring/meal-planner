@@ -6,6 +6,6 @@ user-invocable: false
 
 # Adult profile
 
-One Adult at a time: sex, height, weight, goal (maintain, lose, gain, general health), physical activity and frequency, where they have lunch on work days (home, lunchbox, work canteen), relevant health conditions and medication (optional); whether they already log their weight in a Google Drive file and its exact title (optional — then `weight-read-log` reads it in Reviews instead of asking).
+One Adult at a time: sex, height, weight, goal (maintain, lose, gain, general health), physical activity and frequency, where they have lunch on work days (home, lunchbox, work canteen), relevant health conditions and medication (optional); whether they already log their weight in a Google Drive file (its exact title) or a claude.ai artifact (its link and the dataset id) (optional — then `weight-read-log` reads it in Reviews instead of asking).
 
 → the Member's block (Adult template in `templates/state.md`).

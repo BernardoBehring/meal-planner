@@ -42,7 +42,7 @@ Block template — Adult:
   - Work / hours / weekday lunch (home, lunchbox, work canteen): —
   - Allergies / intolerances / restrictions: —
   - Health / relevant medication: —
-  - Weight log (Google Drive file title, optional): —
+  - Weight log (Google Drive file title, or claude.ai artifact link + dataset id; optional): —
   - Usual presence: every day
 
 Block template — Child:

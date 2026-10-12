@@ -99,7 +99,7 @@ The minimum each Member present must get from the Menu each day — fruit, dairy
 _Avoid_: targets, quotas
 
 **Weight log**:
-An Adult's own daily weight record, kept outside the system (e.g. a Drive spreadsheet) and only read by it.
+An Adult's own daily weight record, kept outside the system (e.g. a Drive spreadsheet or a claude.ai artifact) and only read by it.
 _Avoid_: weigh-in, scale data
 
 **Waste**:
