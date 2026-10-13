@@ -17,7 +17,7 @@ Build the Menu for the 7 days of the planned Week:
 - **Use Stock first**, starting with ⚠️ (use first) items and Leftovers. Do not waste food available at home.
 - Respect PREFERENCES and REJECTED RECIPES; repeat FAVOURITE RECIPES in moderation; avoid what caused Waste; apply the profile's notes (cooking time per day, kitchen equipment, variety wishes, weekly goals, recipe format).
 - Vary proteins (chicken, eggs, legumes, fish, meat), vegetable colours and fruit across the Week.
-- Give approximate portions (e.g. per Adult: cooked rice 150 g, chicken 150 g, beans 100 g, vegetables 150 g), in the units the profile asks for.
+- **Quantities in the Menu itself**: every meal says what each Member present eats and how much, item by item, in the units the profile asks for (e.g. household measures with grams in brackets): "B: 2 scrambled eggs + 1 toast (30 g) · L: 1 egg + 1 toast". Quick meals too ("granola with blueberries" → "L: granola 1 handful (40 g) + blueberries 1 handful (50 g)"). A dish name alone is not a Menu: whoever cooks must be able to prepare and serve every meal from the Menu without opening the recipes.
 - Write a recipe for each more complex dish, as the profile asks (detail level, measures).
 
 Output: the Menu table (one column per meal in the routine; ♻️ for reuse of meal prep or Leftovers, 🏫/💼 for meals eaten out of home), Children's adaptations, Adult portions, recipes. Then the Menu must pass `menu-check-children` (when there are Children).

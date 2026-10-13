@@ -24,7 +24,7 @@ Difference:        X.XX
 
 ## 🥗 Menu
 
-One column per meal in the PROFILE routine (e.g. include "School snack" if a Child takes a snack from home, and "Late snack" if there is one).
+One column per meal in the PROFILE routine (e.g. include "School snack" if a Child takes a snack from home, and "Late snack" if there is one). Every cell gives each present Member's items and quantities (see `menu-build`), e.g. "Ana: porridge 40 g oats + 200 ml milk + 1 banana · Tom: same, 30 g oats".
 
 | Day | Breakfast | School snack | Lunch | Snack | Dinner |
 | --- | --- | --- | --- | --- | --- |

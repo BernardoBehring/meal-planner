@@ -14,7 +14,7 @@ The e-mail is read on a phone, often inside the supermarket. So whatever needs a
 2. **Previous week**: real Spend from Receipts (or "Receipt pending — estimated XX"), Top-up purchases and Meals out; the month close summary block, if a month was closed in this Plan.
 3. **❓ Pending**: what the Lead needs to do (send Receipt X, confirm items, Review, Stock count, recent changes to the Budget or recipients), as a short list.
 4. **🛒 Shopping list**: grouped by supermarket and category, with ☐, quantity and price of each item.
-5. **🥗 Menu**: table of the 7 days of the Week.
+5. **🥗 Menu**: the 7 days of the Week with each person's items and quantities, as in the Week file. On a phone, one block per day (meal → each person's quantities) reads better than a wide table.
 6. **👨‍🍳 Meal prep** (if the Family does it).
 7. **💰 Price comparison**: table, purchase decision and source links.
 8. **💡 How we saved** and Scenarios (if any).
